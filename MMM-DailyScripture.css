@@ -1,0 +1,123 @@
+/* Standalone region-based daily scripture card. */
+.MMM-DailyScripture .dv-root {
+  box-sizing: border-box;
+  width: 100%;
+}
+.MMM-DailyScripture .dv-card {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 111px;
+  padding: 11px 20px 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(230, 236, 255, 0.42);
+  background: linear-gradient(
+    125deg,
+    rgba(49, 57, 81, 0.49),
+    rgba(76, 61, 86, 0.36)
+  );
+  box-shadow:
+    0 9px 28px rgba(8, 15, 25, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.11);
+  -webkit-backdrop-filter: blur(18px) saturate(145%);
+  backdrop-filter: blur(18px) saturate(145%);
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+.MMM-DailyScripture .dv-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 22px;
+}
+.MMM-DailyScripture .dv-symbol {
+  color: #e9d1ff;
+  display: inline-flex;
+  width: 19px;
+  height: 19px;
+}
+.MMM-DailyScripture .dv-symbol svg {
+  width: 100%;
+  height: 100%;
+}
+.MMM-DailyScripture .dv-heading {
+  color: #f6e5ff;
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+.MMM-DailyScripture .dv-date {
+  position: absolute;
+  right: 18px;
+  font-size: 10px;
+  opacity: 0.68;
+}
+.MMM-DailyScripture .dv-header {
+  position: relative;
+}
+.MMM-DailyScripture .dv-text {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.27;
+  font-weight: 450;
+  margin: 7px 0 6px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  overflow-wrap: break-word;
+}
+.MMM-DailyScripture .dv-text--medium {
+  font-size: 18px;
+}
+.MMM-DailyScripture .dv-text--long {
+  font-size: 16px;
+  line-height: 1.2;
+}
+.MMM-DailyScripture .dv-loading {
+  font-size: 16px;
+  opacity: 0.85;
+}
+.MMM-DailyScripture .dv-footer {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 7px;
+  line-height: 1.1;
+}
+.MMM-DailyScripture .dv-reference {
+  font-size: 13px;
+  font-weight: 700;
+  color: #f6d589;
+}
+.MMM-DailyScripture .dv-version {
+  font-size: 10px;
+  opacity: 0.75;
+}
+@media (max-width: 1550px) {
+  .MMM-DailyScripture .dv-card {
+    padding: 9px 14px;
+    min-height: 100px;
+  }
+  .MMM-DailyScripture .dv-text {
+    font-size: 17px;
+  }
+  .MMM-DailyScripture .dv-text--medium {
+    font-size: 16px;
+  }
+  .MMM-DailyScripture .dv-text--long {
+    font-size: 14px;
+  }
+}
+
+.MMM-DailyScripture .dv-root {
+  width: 480px;
+  max-width: 100%;
+}
+.MMM-DailyScripture .dv-date {
+  position: static;
+  margin-left: auto;
+}
+.MMM-DailyScripture .dv-card {
+  position: relative;
+}
